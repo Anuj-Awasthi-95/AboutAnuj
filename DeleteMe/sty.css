@@ -1,0 +1,136 @@
+.flex-container{
+  /*background-color: #cacaca;*/
+  /*border: 3px solid orange;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: 7%;
+}
+
+.fitem{
+  /*border: 1px solid black;*/
+  /*background-color: red;*/
+  /*color:  #fff;*/
+  padding: 2px;
+  margin:  2px;
+  flex-basis: 100%;
+}
+
+.flex-item-1{
+ flex-basis: 7%;
+}
+
+.flex-item-2{
+ flex-basis: 93%;
+ font-size: 120%;
+}
+
+.grid{
+  /*border: 3px solid blue;*/
+/*  height: 230px;
+  width: 60px;*/
+  height: 100%;
+  width: 20%;
+}
+.circle{
+  /*border: 3px solid black;*/
+  background-image: linear-gradient(to right top, #ffa500, #ff885a, #ff7c98, #ff86ca, #cd98e8, #9eadff, #60bfff, #00ceff, #00e7f2, #00f9be, #8cff71, #ffff00);
+  height: 30px; /* add media */
+  width: 30px; /* add media */
+  border-radius: 50%;
+  animation: x-axis 4s infinite cubic-bezier(0,.99,.99,.03) forwards;
+}
+
+.wrapper{
+  /*border: 3px solid orange;*/
+  /*transform: translateY(80px);*/
+  animation: y-axis 4s infinite linear forwards;
+}
+
+@keyframes x-axis{
+  20%{
+    transform: translateX(200%);
+  }
+  40%{
+    transform: translateX(0);
+  }
+  60%{
+    transform: translateX(300%);
+  }
+  80%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(400%);
+  }
+
+}
+
+@keyframes y-axis{
+  20%{
+    transform: translateY(100%);
+  }
+  40%{
+    transform: translateY(200%);
+  }
+  60%{
+    transform: translateY(300%);
+  }
+  80%{
+    transform: translateY(400%);
+  }
+  100%{
+    transform: translateY(500%);
+  }
+}
+
+/*.title span{
+  --total: calc(var(--duration) + var(--delay));
+  position: relative;
+  display: block;
+  color: transparent;
+  overflow: hidden;
+  animation: revealText 1s var(--total) forwards;
+}
+
+.title span :: after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: #bb93fc;
+  animation: rollIn var(--duration) var(--delay) forwards, rollOut var(--duration) var(--delay) forwards;
+}
+
+.title span:nth-child(2)::after{
+  border-top: 3px solid #896ab9;
+}
+
+@keyframes revealText{
+  to{
+    color: #fff;
+  }
+}
+
+@keyframes rollIn{
+  from{
+    transform: scaleX(0);
+  }
+  to{
+    transform: scaleX(1);
+  }
+}
+
+@keyframes rollOut{
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(105%);
+  }
+}*/

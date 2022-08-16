@@ -1,0 +1,12 @@
+.landing section{text-align:center;}
+@media(min-width: 768px){.landing section{}
+}
+.landing #banner{position:relative;display:flex;justify-content:center;align-items:center;;background-color:#FAFAFA;overflow:hidden}
+@media(min-width: 768px){.landing #banner{padding:12.375rem 2rem;min-height:200px;}
+}
+@media(min-width: 992px){.landing #banner{margin-top:-10%}
+}
+.landing #banner-animation{position:absolute;top:0;bottom:0;right:-10%;width:100%}
+@media(min-width: 768px){.landing #banner-animation{right:-20%}
+}
+

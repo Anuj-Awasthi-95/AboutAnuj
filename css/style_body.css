@@ -1,0 +1,27 @@
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+svg {
+	width: 35%;
+	height: 35%;
+	display: block;
+	margin: auto;
+	color: orange;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+svg:hover {
+	fill: purple;
+}
+
+.btn-primary, .btn, .btn-lg {
+	background-color: orange;
+	border: 1px solid orange;
+}
+
+.btn-primary:hover, .btn:hover, btn-lg:hover {
+	background-color: purple;
+	border: 1px solid purple;
+}

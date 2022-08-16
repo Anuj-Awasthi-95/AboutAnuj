@@ -1,0 +1,38 @@
+.multiLang-hello {
+	color: orange;
+	font-family: 'Kaushan Script', cursive;
+}
+
+.multiLang-hello::before {
+            content: "";
+            animation: animate 1 1.3s;
+             content: "Hello!";
+        }
+
+@keyframes animate {
+  
+            0% {
+                content: "Hola!";
+            }
+            15% {
+                content: "Bonjour!";
+            }
+            30% {
+                content: "Guten tag!";
+            }
+            45% {
+                content: "Salve!";
+            }
+            60% {
+                content: "Olá!";
+            }
+            75% {
+                content: "Konnichiwa!";
+            }
+            90% {
+                content: "Namaste!";
+            }
+            100% {
+                content: "Hello!";
+            }
+        }

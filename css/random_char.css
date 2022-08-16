@@ -1,0 +1,264 @@
+
+:root {
+  --dark: #111;
+  --light: #fefefe;
+  --color: var(--dark);
+  --bg: var(--light);
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --color: var(--light);
+    --bg: var(--dark);
+  }
+}
+
+.p1 {
+}
+
+.hide{
+  /*background-color: var(--bg);*/
+  /*min-height: 100vh;*/
+  /*border: 1px solid red;*/
+  opacity: 0;
+  font-size: 1.3rem;
+  font-family: 'poppins', cursive;;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  width: 50%;
+  margin: 10px;
+  transform:  translateX(10%);
+}
+
+.hide.show{
+  opacity: 1;
+  transform: translateX(0);
+  /*transition-delay: 0.2s;*/
+  transition-duration: 2s;
+}
+
+
+.p1[data-scroll='in'] [data-char]:after {
+  /*border: 1px solid green;*/
+  -webkit-animation-name: glitch-switch;
+          animation-name: glitch-switch;
+}
+.reveal--2 [data-char]:after {
+  -webkit-animation-iteration-count: var(--count);
+          animation-iteration-count: var(--count);
+}
+.p1:nth-of-type(1) {
+  position: absolute;
+  opacity: 0;
+}
+.word {
+  position: relative;
+  display: inline-block;
+}
+[data-char] {
+  color: transparent;
+  position: relative;
+}
+[data-char]:after {
+  --txt: attr(data-char);
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-timing-function: steps(1);
+          animation-timing-function: steps(1);
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  content: var(--txt);
+  color: var(--color);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/**
+ * Themeing
+*/
+.page {
+  /*border: 1px solid black;*/
+  align-items: center;
+  display: flex;
+  height: 30vh;
+  justify-content: center;
+  position: relative;
+  scroll-snap-align: center;
+  /*width: 100vw;*/
+}
+.container {
+  /*border: 1px solid red;*/
+  /*height: 100vh;*/
+  overflow: auto;
+  overflow-x: hidden;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+}
+
+.dates{
+  text-align: center; 
+  color: #73777B;
+  font-weight: normal;
+  font-family: 'poppins', cursive;
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+
+
+@-webkit-keyframes glitch-switch {
+  0% {
+    content: var(--char-0);
+  }
+  10% {
+    content: var(--char-1);
+  }
+  20% {
+    content: var(--char-2);
+  }
+  30% {
+    content: var(--char-3);
+  }
+  40% {
+    content: var(--char-4);
+  }
+  50% {
+    content: var(--char-5);
+  }
+  60% {
+    content: var(--char-6);
+  }
+  70% {
+    content: var(--char-7);
+  }
+  80% {
+    content: var(--char-8);
+  }
+  90% {
+    content: var(--char-9);
+  }
+  100% {
+    content: var(--txt);
+  }
+}
+@keyframes glitch-switch {
+  0% {
+    content: var(--char-0);
+  }
+  10% {
+    content: var(--char-1);
+  }
+  20% {
+    content: var(--char-2);
+  }
+  30% {
+    content: var(--char-3);
+  }
+  40% {
+    content: var(--char-4);
+  }
+  50% {
+    content: var(--char-5);
+  }
+  60% {
+    content: var(--char-6);
+  }
+  70% {
+    content: var(--char-7);
+  }
+  80% {
+    content: var(--char-8);
+  }
+  90% {
+    content: var(--char-9);
+  }
+  100% {
+    content: var(--txt);
+  }
+}
+
+
+/*//////////////////////////////////////////////////////////////////////////////*/
+                                  /*Media Queries */
+/*//////////////////////////////////////////////////////////////////////////////*/
+
+/*small : yellow
+medium : violet
+med-large:green
+large :orange
+extra-large:blue
+*/
+
+
+/*Small (sm) devices (landscape phones, 576px)*/
+
+@media (max-width: 576px) {
+  .page{
+    /*border: 2px solid yellow;*/
+  }
+
+  .hide{
+    font-size: 0.8rem;
+  }
+   .dates{
+  font-size: 0.9rem;
+   }
+
+}
+
+/*Medium (md) devices (tablets, 576px to 768px)*/
+@media (min-width: 576px) and (max-width: 768px) {
+  .page{
+    /*border: 2px solid violet;*/
+  }
+  .hide{
+    font-size: 1rem;
+  }
+   .dates{
+  font-size: 1.1rem;
+   }
+}
+
+/*Med-large (m-lg) devices (desktops, 768px to 992px)*/
+@media (min-width: 768px) and (max-width: 992px) {
+  .page{
+    /*border: 2px solid green;*/
+  }
+  .hide{
+    font-size: 1rem;
+  }
+   .dates{
+  font-size: 1.1rem;
+   }
+}
+
+ /* Large devices (desktops, 1200px and up)*/
+@media (min-width: 992px) and (max-width: 1200px) {
+  .page{
+    /*border: 2px solid orange;*/
+  }
+  .hide{
+    font-size: 1.3rem;
+  }
+   .dates{
+  font-size: 1.4rem;
+   }
+}
+
+ /*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px){
+  .page{
+    /*border: 2px solid blue;*/
+  }
+  .hide{
+    font-size: 1.3rem;
+  }
+   .dates{
+  font-size: 1.4rem;
+   }
+}
