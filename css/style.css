@@ -118,13 +118,13 @@ html,body{
   max-width: 86.5%; /*DO NOT CHANGE*/
 }
 
-/*  .contact-img{
-    height: 15%; 
-    width: 15%; 
+/*.contact-img{
+    height: 17%; 
+    width: 17%; 
   }*/
-  .contact-img1:hover{
-    height: 14%;
-    width: 14%;
+  
+/*  .contact-img1:hover{
+    animation: ease-out;
   }
     .contact-img2:hover{
     height: 14%;
@@ -137,7 +137,7 @@ html,body{
     .contact-img4:hover{
     height: 14%;
     width: 14%;
-  }
+  }*/
 
 @media screen and (max-width:990px) {
   .flex-container { flex-wrap: wrap; }
