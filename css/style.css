@@ -51,6 +51,10 @@ html,body{
              content: "Hello!";
         }
 
+.lead-text-highlight{
+  font-size: 5vh
+}
+
 @keyframes animate {
   
             0% {
@@ -225,6 +229,9 @@ extra-large:blue
   .footer-lead{
     font-size: 1rem !important;
   }
+  .lead-text-highlight{
+    font-size: 3vh
+  }
   .project_image_console{
     position: sticky; /*DO NOT CHANGE*/
     top: 11.3%; /*DO NOT CHANGE*/ 
@@ -245,6 +252,9 @@ extra-large:blue
   .footer-lead{
     font-size: 1rem !important;
   }
+  .lead-text-highlight{
+    font-size: 3vh
+  }
   
 }
 
@@ -258,6 +268,9 @@ extra-large:blue
   }
   .footer-lead{
     font-size: 1rem !important;
+  }
+  .lead-text-highlight{
+    font-size: 4vh
   }
   .project_image_console{
     position: sticky; /*DO NOT CHANGE*/
@@ -279,6 +292,9 @@ extra-large:blue
   .footer-lead{
     font-size: 1.2rem !important;
   }
+  .lead-text-highlight{
+    font-size: 5vh
+  }
   .project_image_console{
     position: sticky; /*DO NOT CHANGE*/
     top: 9%; /*DO NOT CHANGE*/ 
@@ -298,6 +314,9 @@ extra-large:blue
   }
   .footer-lead{
     font-size: 1.2rem !important;
+  }
+  .lead-text-highlight{
+    font-size: 5vh
   }
 }
 
