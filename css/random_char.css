@@ -1,4 +1,3 @@
-
 :root {
   --dark: #111;
   --light: #fefefe;
@@ -15,13 +14,13 @@
 .p1 {
 }
 
-.hide{
+.hide {
   /*background-color: var(--bg);*/
   /*min-height: 100vh;*/
   /*border: 1px solid red;*/
   opacity: 0;
   font-size: 1.3rem;
-  font-family: 'poppins', cursive;;
+  font-family: "poppins", cursive;
   font-weight: normal;
   display: flex;
   flex-direction: column;
@@ -30,25 +29,24 @@
   position: relative;
   width: 50%;
   margin: 10px;
-  transform:  translateX(10%);
+  transform: translateX(10%);
 }
 
-.hide.show{
+.hide.show {
   opacity: 1;
   transform: translateX(0);
   /*transition-delay: 0.2s;*/
   transition-duration: 2s;
 }
 
-
-.p1[data-scroll='in'] [data-char]:after {
+.p1[data-scroll="in"] [data-char]:after {
   /*border: 1px solid green;*/
   -webkit-animation-name: glitch-switch;
-          animation-name: glitch-switch;
+  animation-name: glitch-switch;
 }
 .reveal--2 [data-char]:after {
   -webkit-animation-iteration-count: var(--count);
-          animation-iteration-count: var(--count);
+  animation-iteration-count: var(--count);
 }
 .p1:nth-of-type(1) {
   position: absolute;
@@ -65,13 +63,13 @@
 [data-char]:after {
   --txt: attr(data-char);
   -webkit-animation-duration: 0.2s;
-          animation-duration: 0.2s;
+  animation-duration: 0.2s;
   -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  animation-delay: 0.5s;
   -webkit-animation-timing-function: steps(1);
-          animation-timing-function: steps(1);
+  animation-timing-function: steps(1);
   -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
   content: var(--txt);
   color: var(--color);
   position: absolute;
@@ -82,7 +80,7 @@
  * Themeing
 */
 .page {
-  /*border: 1px solid black;*/
+  /* border: 1px solid black; */
   align-items: center;
   display: flex;
   height: 30vh;
@@ -97,19 +95,17 @@
   overflow: auto;
   overflow-x: hidden;
   -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
 }
 
-.dates{
-  text-align: center; 
-  color: #73777B;
+.dates {
+  text-align: center;
+  color: #73777b;
   font-weight: normal;
-  font-family: 'poppins', cursive;
+  font-family: "poppins", cursive;
   margin-top: 10px;
   font-size: 1.2rem;
 }
-
-
 
 @-webkit-keyframes glitch-switch {
   0% {
@@ -182,9 +178,8 @@
   }
 }
 
-
 /*//////////////////////////////////////////////////////////////////////////////*/
-                                  /*Media Queries */
+/*Media Queries */
 /*//////////////////////////////////////////////////////////////////////////////*/
 
 /*small : yellow
@@ -194,71 +189,69 @@ large :orange
 extra-large:blue
 */
 
-
 /*Small (sm) devices (landscape phones, 576px)*/
 
 @media (max-width: 576px) {
-  .page{
+  .page {
     /*border: 2px solid yellow;*/
   }
 
-  .hide{
+  .hide {
     font-size: 0.8rem;
   }
-   .dates{
-  font-size: 0.9rem;
-   }
-
+  .dates {
+    font-size: 0.9rem;
+  }
 }
 
 /*Medium (md) devices (tablets, 576px to 768px)*/
 @media (min-width: 576px) and (max-width: 768px) {
-  .page{
+  .page {
     /*border: 2px solid violet;*/
   }
-  .hide{
+  .hide {
     font-size: 1rem;
   }
-   .dates{
-  font-size: 1.1rem;
-   }
+  .dates {
+    font-size: 1.1rem;
+  }
 }
 
 /*Med-large (m-lg) devices (desktops, 768px to 992px)*/
 @media (min-width: 768px) and (max-width: 992px) {
-  .page{
+  .page {
     /*border: 2px solid green;*/
   }
-  .hide{
+  .hide {
     font-size: 1rem;
   }
-   .dates{
-  font-size: 1.1rem;
-   }
+  .dates {
+    font-size: 1.1rem;
+  }
 }
 
- /* Large devices (desktops, 1200px and up)*/
+/* Large devices (desktops, 1200px and up)*/
 @media (min-width: 992px) and (max-width: 1200px) {
-  .page{
+  .page {
     /*border: 2px solid orange;*/
   }
-  .hide{
+  .hide {
     font-size: 1.3rem;
   }
-   .dates{
-  font-size: 1.4rem;
-   }
+  .dates {
+    font-size: 1.4rem;
+  }
 }
 
- /*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px){
-  .page{
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  .page {
     /*border: 2px solid blue;*/
   }
-  .hide{
+  .hide {
     font-size: 1.3rem;
   }
-   .dates{
-  font-size: 1.4rem;
-   }
+  .dates {
+    font-size: 1.4rem;
+  }
 }
